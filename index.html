@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link to a CSS file for styling -->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <h1>User Registration</h1>
+        <form id="registration-form" action="process_registration.php" method="POST">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="grade-level">Grade Level:</label>
+            <select id="grade-level" name="grade-level">
+                <option value="elementary">Elementary School</option>
+                <option value="middle">Middle School</option>
+                <option value="high">High School</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
 </body>
 </html>
